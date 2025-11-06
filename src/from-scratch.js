@@ -36,11 +36,35 @@ const makeFilterByLength = (maxLength) => {
 };
 
 const makeGradeTracker = () => {
-  let grades = 
+  let list = []
 };
 
 const makeShoppingList = () => {
-
+  // create a list outside of the closure scope
+  let list = []
+  return {
+    // write methods to edit a shopping list
+    // method definiton -> the closure
+    getItems() {
+      return [...list]
+    },
+    addItem(item) {
+      list.push(item)
+      console.log(`${item} successfully added! Now you have ${list.length} item(s).`)
+      return list.length
+    },
+    removeItem(item) {
+      for (let i = 0; i < list.length; i++) {
+        if (list[i] === item) {
+          list.splice(i, 1)
+          console.log(`${item} successfully removed. You now have ${list.length} item(s).`)
+          return true
+        }
+      }
+      console.log(`${item} not found.`)
+      return false
+    }
+  }
 };
 
 module.exports = {

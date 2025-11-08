@@ -8,10 +8,10 @@
       "FrScTe5": 1,
       "FrScTe6": 1,
       "FrScTe7": 1,
-      "FrScTe8": 0,
+      "FrScTe8": 1,
       "FrScTe9": 0,
-      "FrScTe10": 0,
-      "FrScTe11": 0,
+      "FrScTe10": 1,
+      "FrScTe11": 1,
       "FrScTe12": 1,
       "FrScTe13": 1,
       "FrScTe14": 1,
@@ -21,7 +21,7 @@
     },
     "Debug Tests": {
       "DeTe1": 1,
-      "DeTe2": 0
+      "DeTe2": 1
     }
   },
   "idToTestNameHash": {
@@ -127,8 +127,8 @@
     "From Scratch Tests makeShoppingList .removeItem - removes an item from the items array, returns true, and logs the right message": "FrScTe16"
   },
   "humanReadable": {
-    "From Scratch Tests": "13/17",
-    "finalTestScore": "FINAL SCORE: 14/19",
-    "Debug Tests": "1/2"
+    "From Scratch Tests": "16/17",
+    "finalTestScore": "FINAL SCORE: 18/19",
+    "Debug Tests": "2/2"
   }
 }

@@ -37,6 +37,20 @@ const makeFilterByLength = (maxLength) => {
 
 const makeGradeTracker = () => {
   let list = []
+  return {
+    addGrade(grade) {
+      if (grade <= 100 && grade > 0) {
+        list.push(grade)
+        return true
+      } else {
+        return false
+      }
+    },
+    getAverage() {
+      if (list.length === 0) return 0
+      return list.reduce((acc, curr) => (acc += curr), 0) / list.length
+    },
+  }
 };
 
 const makeShoppingList = () => {

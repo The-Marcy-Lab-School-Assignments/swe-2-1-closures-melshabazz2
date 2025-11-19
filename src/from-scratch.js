@@ -39,7 +39,7 @@ const makeGradeTracker = () => {
   let list = []
   return {
     addGrade(grade) {
-      if (grade <= 100 && grade > 0) {
+      if (grade <= 100 && grade >= 0) {
         list.push(grade)
         return true
       } else {

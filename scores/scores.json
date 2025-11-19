@@ -9,7 +9,7 @@
       "FrScTe6": 1,
       "FrScTe7": 1,
       "FrScTe8": 1,
-      "FrScTe9": 0,
+      "FrScTe9": 1,
       "FrScTe10": 1,
       "FrScTe11": 1,
       "FrScTe12": 1,
@@ -127,8 +127,8 @@
     "From Scratch Tests makeShoppingList .removeItem - removes an item from the items array, returns true, and logs the right message": "FrScTe16"
   },
   "humanReadable": {
-    "From Scratch Tests": "16/17",
-    "finalTestScore": "FINAL SCORE: 18/19",
+    "From Scratch Tests": "17/17",
+    "finalTestScore": "FINAL SCORE: 19/19",
     "Debug Tests": "2/2"
   }
 }

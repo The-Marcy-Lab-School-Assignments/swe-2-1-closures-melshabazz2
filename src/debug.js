@@ -2,19 +2,27 @@
 // Can you make it private using closure?
 
 const createCourse = (topic, instructor) => {
+  const students = []
   return {
     topic,
     instructor,
-    students: [],
     addStudent(name) {
-      this.students.push(name);
+      students.push(name);
     },
     removeStudent(name) {
-      this.students.splice(this.students.indexOf(name), 1);
+      const index = students.indexOf(name)
+      if (index > -1) {
+        students.splice(index, 1)
+      }
+      // this.students.splice(this.students.indexOf(name), 1);
     },
     getStudents() {
-      return this.students;
+      // return this.students;
+      return [...students]
     },
+    getStudentCount() {
+      return students.length
+    }
   };
 };
 
